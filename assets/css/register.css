@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+h3 {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+label i {
+    margin-right: 8px;
+    color: #667eea;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-btn:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+.register-btn i {
+    margin-right: 8px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #764ba2;
+}
+
+.login-link i {
+    margin-right: 5px;
+}
+
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #c62828;
+}
+
+.error-message p {
+    margin-bottom: 5px;
+}
+
+.error-message p:last-child {
+    margin-bottom: 0;
+}
+
+.error-message i {
+    margin-right: 8px;
+}
+
+.success-message {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2e7d32;
+    text-align: center;
+}
+
+.success-message p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.success-message p:last-child {
+    margin-bottom: 0;
+}
+
+.success-message i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.verification-info {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #1565c0;
+}
+
+.verification-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.verification-info p:last-child {
+    margin-bottom: 0;
+}
+
+.verification-info a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.verification-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .register-container {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    input, select {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .register-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+} 

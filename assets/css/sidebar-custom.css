@@ -1,0 +1,26 @@
+/* Custom Sidebar Styles */
+.sidebar {
+    background-color: #1a2f2f !important; /* Dark teal/green color */
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav li.active a {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar-header,
+.sidebar-footer {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.profile-icon {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.profile-icon:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+} 
